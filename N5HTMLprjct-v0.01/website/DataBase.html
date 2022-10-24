@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Test-database</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--little bit of CSS just for this page and its buttons-->
+<style>
+  #hiddenDIV {
+    -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: justify;
+  }
+/*this is messy and sucks, i dont care however so its fine*/
+  #hiddenDIV2 {
+    -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: justify;
+  }
+
+  /* button css code, very messy i know buts its from 2017, t'was a diffrent time back then*/
+  .button-arvstyle-no17-dm-2017 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #dfc83e,#e20a0b);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 90px;
+  padding: 3px;
+  text-decoration:none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-arvstyle-no17-dm-2017:active,
+.button-arvstyle-no17-dm-2017:hover {
+  outline: 0;
+}
+
+.button-arvstyle-no17-dm-2017 span {
+  background-color: #2f5787;
+  padding: 6px 2px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 400ms;
+}
+
+.button-arvstyle-no17-dm-2017:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-arvstyle-no17-dm-2017 {
+    font-size: 14px;
+    min-width: 96px;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="navbar">
+  <a href="contact.html">Contact Us</a>
+  <a href="DataBase.html">Cources</a>
+  <a href="index.html">Home</a>
+  <a href="External.html">Link</a>
+  <a href="#" class="right">Link</a>
+</div>
+<br>
+<div class = "main">
+  <button class="button-arvstyle-no17-dm-2017" role="button" onclick="Hidden()"><span class="text">S1 cource</span></button>
+<div id="hiddenDIV">
+  <ul>
+    <li>Introduction to Computing - create an ID badge with photo and QR code, create a timetable</li>
+    <li>Internet Safety</li>
+    <li>Animation - create a stop-frame animation about a concept in Biology.</li>
+    <li>Computer systems - compare games consoles and learn about new technologies</li>
+  </ul>
+  </div>
+  <br>
+  <button class="button-arvstyle-no17-dm-2017" role="button" onclick="Hidden2()"><span class="text">S2 cource</span></button>
+<div id="hiddenDIV2">
+  <ul>
+    <li>Introduction to Computing - create an ID badge with photo and QR code, create a timetable</li>
+    <li>Internet Safety</li>
+    <li>Animation - create a stop-frame animation about a concept in Biology.</li>
+    <li>Computer systems - compare games consoles and learn about new technologies</li>
+  </ul>
+  </div>
+</div>
+<script>
+  function Hidden() {
+    var x = document.getElementById("hiddenDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function Hidden2() {
+    var x = document.getElementById("hiddenDIV2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+  
+<div class = "credits">
+  <h6><br>
+    Bearsden Academy
+    <br>
+    St Andrew's Way<br>
+    Bearsden<br>
+    G61 3AX<br>
+    T: 0141 955 2344<br>
+    E: <a href="mailto:office@bearsdenacademy.e-dunbarton.sch.uk">office@bearsdenacademy.e-dunbarton.sch.uk</a><div class = "creditsimage"><img src="bearsden-trans.png" alt="B.A crest" width="100" height="100"><h6>By daniel mui 4c</h6></div></h6>
+  </div>
+
+</body>
+</html>
